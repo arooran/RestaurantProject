@@ -31,7 +31,7 @@ namespace Restaurant.Data.Configurations
                One branch has only one address 1-to-1
                branch id should be a foreignkey for branch address
             */
-            HasOptional(b => b.BranchAddress).WithRequired(a => a.Branch).Map(m=>m.MapKey("BranchAddressId")).WillCascadeOnDelete(true);
+            HasOptional(b => b.BranchAddress).WithRequired(a => a.Branch).WillCascadeOnDelete(true);
 
 
 

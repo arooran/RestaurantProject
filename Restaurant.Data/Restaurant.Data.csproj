@@ -59,6 +59,10 @@
     <Compile Include="Migrations\201605282215480_IntialCreate.Designer.cs">
       <DependentUpon>201605282215480_IntialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201605292054233_IntialCreate_V1.cs" />
+    <Compile Include="Migrations\201605292054233_IntialCreate_V1.Designer.cs">
+      <DependentUpon>201605292054233_IntialCreate_V1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="RestaurantDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,6 +80,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201605282215480_IntialCreate.resx">
       <DependentUpon>201605282215480_IntialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605292054233_IntialCreate_V1.resx">
+      <DependentUpon>201605292054233_IntialCreate_V1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

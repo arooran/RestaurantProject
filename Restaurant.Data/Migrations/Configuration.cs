@@ -1,5 +1,6 @@
 namespace Restaurant.Data.Migrations
 {
+    using Entities;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -14,6 +15,12 @@ namespace Restaurant.Data.Migrations
 
         protected override void Seed(RestaurantDbContext context)
         {
+
+            context.PhoneNumberTypes.AddOrUpdate(p => p.Description,
+                new PhoneNumberTypes { Description = "Office", CreatedBy = "Arooran", CreatedDate = DateTime.Now, IP = "0.0.0.0" },
+                new PhoneNumberTypes { Description = "Fax", CreatedBy = "Arooran", CreatedDate = DateTime.Now, IP = "0.0.0.0" });
+            
+
             //  This method will be called after migrating to the latest version.
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
